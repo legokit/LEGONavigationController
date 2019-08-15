@@ -1,0 +1,23 @@
+PODS:
+  - LEGONavigationController (0.1.0):
+    - Masonry
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - LEGONavigationController (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+
+EXTERNAL SOURCES:
+  LEGONavigationController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LEGONavigationController: c7bccf17bb3c38eddad9cb57910d9e6d7b8a2017
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: c0c5ac752c15d334889429898df82c2d625cef3a
+
+COCOAPODS: 1.7.4

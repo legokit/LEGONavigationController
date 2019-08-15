@@ -1,0 +1,6 @@
+framework module LEGONavigationController {
+  umbrella header "LEGONavigationController-umbrella.h"
+
+  export *
+  module * { export * }
+}
