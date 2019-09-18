@@ -115,7 +115,11 @@ static const char kCallbackDic;
         if (self.rightButton) {
             [self.rightButton removeFromSuperview];
         }
-        button.frame = CGRectMake(self.bounds.size.width - button.frame.size.width - 15, button.frame.origin.y, button.frame.size.width, button.frame.size.height);
+        CGFloat x = 0;
+        if (title && !image) {
+            x = 15;  // back，close
+        }
+        button.frame = CGRectMake(self.bounds.size.width - button.frame.size.width - x, button.frame.origin.y, button.frame.size.width, button.frame.size.height);
         self.rightButton = button;
     }
     button.callback = callback;
