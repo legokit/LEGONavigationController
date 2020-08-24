@@ -23,15 +23,15 @@
     self.navigationBarHidden = NO;
     self.navigationBar.hidden = YES;
     
-    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(statusBarChangeNoti:) name:UIApplicationDidChangeStatusBarFrameNotification object:nil];
+//    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(statusBarChangeNoti:) name:UIApplicationDidChangeStatusBarFrameNotification object:nil];
     
     // Do any additional setup after loading the view.
 }
 
 - (void)dealloc {
-    [[NSNotificationCenter defaultCenter]  removeObserver:self name:UIApplicationWillChangeStatusBarFrameNotification object:nil];
-    [[UIDevice currentDevice]endGeneratingDeviceOrientationNotifications];
+//    [[NSNotificationCenter defaultCenter]  removeObserver:self name:UIApplicationWillChangeStatusBarFrameNotification object:nil];
+//    [[UIDevice currentDevice]endGeneratingDeviceOrientationNotifications];
 }
 
 - (void)statusBarChangeNoti:(NSNotification *)notifycation {
